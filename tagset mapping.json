@@ -1,0 +1,326 @@
+{
+	"name": "General Tagset",
+	"desc": "Converting different tagsets from tree-tagger into general tagset",
+	"tagset": {
+		"ABB": {
+			"desc": "abbreviation",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": [],
+				"russian": [],
+				"french": ["ABR"]
+			}
+		},
+		"ADJ": {
+			"desc": "adjective, including comparative and superlative (also includes ordinals in English and Russian, not sure about French)",
+			"nltk": "",
+			"wn": "a",
+			"tags": {
+				"english": ["JJ", "JJR", "PDT", "JJS"],
+				"russian": ["Afc", "Afc---f", "Afp", "Afp*", "Afsfsn", "Mo*", "Afcmsnf"],
+				"french": ["ADJ"]
+				}
+		},
+		"ADV": {
+			"desc": "adverb",
+			"nltk": "",
+			"wn": "r",
+			"tags": {
+				"english": ["RB", "RBR", "RBS"],
+				"russian": ["R", "Rc"],
+				"french": ["ADV"]
+				}
+		},
+		"DET": {
+			"desc": "determiner (article etc)",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["DT"],
+				"russian": [],
+				"french": ["DET:ART"]
+				}
+		},
+		"POSPron": {
+			"desc": "possessive pronouns; in Russian included in pronouns, I cite the Genitive cases here, English \"one's\" also here",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["PP$", "PP+POS", "CD+POS"],
+				"russian": ["P-1-pg", "P-2-pg", "P-3-pg", "P-1-sg", "P-2-sg", "P-3-sg"],
+				"french": ["DET:POS", "PRO:POS"]
+				}
+		},
+		"INTERJ": {
+			"desc": "interjection",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["UH"],
+				"russian": ["I"],
+				"french": ["INT"]
+				}
+		},
+		"CONJ": {
+			"desc": "coordinating conjunction in English, conjunction in French and Russian",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["CC"],
+				"russian": ["C"],
+				"french": ["KON"]
+				}
+		},
+		"NAME": {
+			"desc": "proper name",
+			"nltk": "",
+			"wn": "n",
+			"tags": {
+				"english": ["NP", "NPS", "NP+POS", "NPS+POS"],
+				"russian": ["Np*"],
+				"french": ["NAM"]
+				}
+		},
+		"NOUN": {
+			"desc": "noun",
+			"nltk": "",
+			"wn": "n",
+			"tags": {
+				"english": ["NN", "NNP", "NNS", "NN+POS", "NNS+POS"],
+				"russian": ["Nc*"],
+				"french": ["NOM"]
+				}
+		},
+		"NUM": {
+			"desc": "cardinal numbers (ordinals are in ADJ for English, not sure for others)",
+			"nltk": "",
+			"wn": "n",
+			"tags": {
+				"english": ["CD"],
+				"russian": ["Mc*"],
+				"french": ["NUM"]
+				}
+		},
+		"PRON": {
+			"desc": "pronoun (except Gen for Russian)",
+			"nltk": "",
+			"wn": "n",
+			"tags": {
+				"english": ["PP", "PP+VBP", "PP+MD", "PP+VBZ"],
+				"russian": ["P-1*", "P-2*", "P-3*", "P--*"],
+				"french": ["PRO:PER", "PRO:DEM", "PRO:REL", "PRO:IND"]
+				}
+		},
+		"PREP": {
+			"desc": "prepositions (and subordinating conjunctions in English)",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["IN"],
+				"russian": ["Sp*", "Sc"],
+				"french": ["PRP", "PRP:det"]
+				}
+		},
+		"PUN": {
+			"desc": "punctuation",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": [",", ":"],
+				"russian": [",", ":", "-"],
+				"french": ["PUN", "PUN:cit", ":", ","]
+				}
+		},
+		"QUOTES": {
+			"desc": "quotation marks",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["''", "``"],
+				"russian": ["\""],
+				"french": ["\""]
+				}
+		},
+		"BRACKETS": {
+			"desc": "brackets - don't forget to divide into 2",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["(", ")"],
+				"russian": ["(", ")"],
+				"french": ["(", ")"]
+				}
+		},
+		"SENT": {
+			"desc": "sentence tag (end of sentence)",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["SENT"],
+				"russian": ["SENT"],
+				"french": ["SENT"]
+				}
+		},
+		"SYM": {
+			"desc": "symbol",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["SYM"],
+				"russian": [],
+				"french": ["SYM"]
+				}
+		},
+		"THERE": {
+			"desc": "there is/there are",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["EX"],
+				"russian": [],
+				"french": []
+				}
+		},
+		"FW": {
+			"desc": "foreign word",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["FW"],
+				"russian": [],
+				"french": []
+				}
+		},
+		"VBInf": {
+			"desc": "verb: infinitive",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["VB"],
+				"russian": ["Vmn*"],
+				"french": ["VER:infi"]
+				}
+		},
+		"VBPast": {
+			"desc": "verb: past tense (French and English past participle is separate, but many of English PPs are here because the form is the same!)",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["VBD", "VHN", "VHD", "VVN", "VVD"],
+				"russian": ["Vm-s-*", "Vmis3*", "Vmis-p*", "Vmis-s*"],
+				"french": ["VER:impf", "VER:simp"]
+				}
+		},
+		"VBPastP": {
+			"desc": "verb part participle",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["VBN"],
+				"russian": ["Vm-p-snpsp", "Vmps-*"],
+				"french": ["VER:pper"]
+				}
+		},
+		"VBGer": {
+			"desc": "verb gerund",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["VBG", "VVG", "VHG"],
+				"russian": ["Vmg*", "Vmpp*"],
+				"french": ["VER:ppre"]
+				}
+		},
+		"VBPres": {
+			"desc": "verb present tense",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["VBP", "VBZ", "VHZ", "VHP", "VVZ", "VVP", "VH", "VV", "VBP+RB"],
+				"russian": ["Vm-p-*", "Vm-p1*", "Vm-p2*", "Vm-p3*", "Vmip*"],
+				"french": ["VER:pres"]
+				}
+		},
+		"VBFut": {
+			"desc": "verb: future",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": [],
+				"russian": ["Vm-f*", "Vmif*"],
+				"french": ["VER:futu"]
+				}
+		},
+		"VBImper": {
+			"desc": "verb: imperative",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": [],
+				"russian": ["Vmm*"],
+				"french": ["VER:impe"]
+				}
+		},
+		"VBOther": {
+			"desc": "modal for English, conditional etc for French",
+			"nltk": "",
+			"wn": "v",
+			"tags": {
+				"english": ["MD"],
+				"russian": ["Vm"],
+				"french": ["VER:cond", "VER:subi", "VER:subp"]
+				}
+		},
+		"LIST": {
+			"desc": "list",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["LS"],
+				"russian": [],
+				"french": []
+				}
+		},
+		"POS": {
+		"desc": "possession marker",
+		"nltk": "",
+		"wn": "n",
+		"tags": {
+			"english": ["POS"],
+			"russian": [],
+			"french": []
+			}
+		},
+		"PART": {
+			"desc": "particle",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["RP"],
+				"russian": ["Q"],
+				"french": []
+				}
+		},
+		"TO": {
+			"desc": "to in English",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["TO"],
+				"russian": [],
+				"french": []
+				}
+		},
+		"WH": {
+			"desc": "wh-words",
+			"nltk": "",
+			"wn": "",
+			"tags": {
+				"english": ["WDT", "WP", "WP$", "WRB"],
+				"russian": [],
+				"french": []
+				}
+		}
+	}
+}
